@@ -1,0 +1,88 @@
+{
+  "BACK_BUTTON_TEXT":"Retour",
+
+  "NAME": "Nom",
+  "PASSWORD": "Mot de passe",
+  "EMAIL": "E-mail",
+  "USERNAME": "Username",
+  "LOGIN": "Connexion",
+
+  "SIGNUP": "Inscription",
+  "SLOGAN": "Shopping sans queue",
+  "NO_ACCOUNT": "Vous n'avez pas de compte?",
+  "ACCOUNT": "Vous avez déja un compte?",
+  "Supermarket": "Supermarché",
+
+  "Confirm": "Confirmer",
+  "Cancel": "Annuler ",
+  "QUANTITY": "Quantité",
+  "Choice": "choix",
+  "INSTITUTION": "Institution financière",
+
+  "CARD": "Carte de paiement",
+  "CART": "Panier",
+  "PAYMENT": "Paiement",
+  "NUMBER": "Numéro de carte",
+  "RECEIPT": "Reçu",
+  "THX": "Merci d'avoir utiliser notre application",
+
+  "SUCCESS": "Votre opération d'achat a été effectuée avec succès",
+  "FIND_QR": "Vous trouverez ci-dessous, le code QR correspondant à cette opération",
+  "FORGOT_PASSWORD": "Mot de passe oublié?",
+  "RESET_PASSWORD": "Réinitialiser mot de passe",
+  "RESET_MESSAGE":"Enter l'adresse email correspondante à votre compte, vous recevrez un email pour réinitialiser le mot de passe",
+  
+  "LOGIN_GOOGLE":"Se connecter avec Google",
+  "LOGIN_FB":"Se connecter avec Facebook",
+  "EMAIL_REQUIRED":"Un email est requis!",
+  "PWD_REQUIRED":"Un mot de passe est requis!",
+  "Modify":"Modifier",
+
+  "Delete":"Supprimer",
+  "TOTAL":"Prix total",
+  "BACK_HOME":"Retour à la page d'accueil",
+  "SEND":"Envoyer",
+
+
+  
+  "TAB1_TITLE": "Items",
+  "TAB2_TITLE": "Recherche",
+  "TAB3_TITLE": "Paramètres",
+
+  "MAP_TITLE": "Carte",
+
+  "TUTORIAL_SLIDE1_TITLE": "Bienvenue dans le kit de démarrage Ionic Super Starter",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "<b>Ionic Super Starter</b> est un kit complet pour démarrer sur Ionic. Il repose sur les meilleures pratiques et implémente de nombreux types de pages.",
+
+  "TUTORIAL_SLIDE2_TITLE": "Comment utiliser le Super Starter",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "Assemblez les types de pages désirés et supprimez les autres. Le kit inclut plusieurs mises en page courantes d’applications mobiles, comme les pages de connexion et d’inscription, les onglets et cette page de tutoriel.",
+
+  "TUTORIAL_SLIDE3_TITLE": "Pour commencer",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "Si vous avez besoin d’aide, consultez le README du Super Starter pour un tutoriel complet.",
+
+  "SETTINGS_TITLE": "Paramètres",
+  "SETTINGS_OPTION1": "Option 1",
+  "SETTINGS_OPTION2": "Option 2",
+  "SETTINGS_OPTION3": "Option 3",
+  "SETTINGS_OPTION4": "Option 4",
+
+  "SETTINGS_PAGE_PROFILE": "Modifier le profil",
+
+  "WELCOME_TITLE": "Bienvenue",
+
+  "LOGIN_TITLE": "Connexion",
+  "LOGIN_ERROR": "Connexion impossible. Veuillez vérifier les informations de votre compte et réessayer.",
+  "LOGIN_BUTTON": "Connexion",
+  "SIGNUP_TITLE": "Inscription",
+  "SIGNUP_ERROR": "Inscription impossible. Veuillez vérifier les informations de votre compte et réessayer.",
+  "SIGNUP_BUTTON": "Inscription",
+
+  "LIST_MASTER_TITLE": "Items",
+
+  "ITEM_CREATE_TITLE": "Nouvel item",
+  "ITEM_CREATE_CHOOSE_IMAGE": "Ajouter une image",
+
+  "CARDS_TITLE": "Social",
+
+  "SEARCH_TITLE": "Recherche"
+}

@@ -1,0 +1,105 @@
+{
+  "BACK_BUTTON_TEXT": "Back",
+
+  "NAME": "Name",
+  "EMAIL": "Email",
+  "USERNAME": "Username",
+  "PASSWORD": "Password",
+  "LOGIN": "Sign in",
+
+  "SIGNUP": "Sign up",
+  "SLOGAN": "No-Line Shopping Solution",
+  "NO_ACCOUNT": "Don't have an Account?",
+  "ACCOUNT": "Already have an Account?",
+  "Supermarket": "Supermarket",
+
+  "Confirm": "Confirm",
+  "Cancel": "Cancel",
+  "QUANTITY": "Quantity",
+  "Choice": "choice",
+  "INSTITUTION": "Financial institution",
+
+  "CARD": "Payment card",
+  "CART": "CART",
+  "PAYMENT": "Payment",
+  "NUMBER": "Card number",
+  "RECEIPT": "Receipt",
+  "THX": "Thank you for using our mobile app",
+
+  "SUCCESS": "Your purchase is successful",
+  "FIND_QR": "You will find below the QR code of your purchase", 
+  "FORGOT_PASSWORD": "Forgot password?",
+  "RESET_PASSWORD": "Reset Password",
+  "RESET_MESSAGE":"Enter the email address associated with your account,and review your email to reset the password.",
+  
+  "LOGIN_GOOGLE":"Sign in with Google",
+  "LOGIN_FB":"Sign in with Facebook",
+  "EMAIL_REQUIRED":"An email is required!",
+  "PWD_REQUIRED":"A password is required!",
+  "Modify":"Modify",
+
+  "Delete":"Delete",
+  "TOTAL":"Total price",
+  "BACK_HOME":"Back to Home",
+  "SEND":"SEND",
+
+
+
+
+  "TAB1_TITLE": "Items",
+  "TAB2_TITLE": "Search",
+  "TAB3_TITLE": "Settings",
+  "MAP_TITLE": "Map",
+
+  "TUTORIAL_SKIP_BUTTON": "Skip",
+  "TUTORIAL_CONTINUE_BUTTON": "Continue",
+
+  "TUTORIAL_SLIDE1_TITLE": "Welcome to the Ionic Super Starter",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "The <b>Ionic Super Starter</b> is a fully-featured Ionic starter with many pre-built pages and best practices.",
+
+  "TUTORIAL_SLIDE2_TITLE": "How to use the Super Starter",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "Assemble the various page types you want and remove the ones you don't. We've provided many common mobile app page layouts, like login and signup pages, tabs, and this tutorial page.",
+
+  "TUTORIAL_SLIDE3_TITLE": "Getting Started",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "Need help? Check out the Super Starter README for a full tutorial",
+
+  "TUTORIAL_SLIDE4_TITLE": "Ready to Play?",
+
+  "WELCOME_INTRO": "The starting point for your next great Ionic app",
+
+  "SETTINGS_TITLE": "Settings",
+  "SETTINGS_OPTION1": "Option 1",
+  "SETTINGS_OPTION2": "Option 2",
+  "SETTINGS_OPTION3": "Option 3",
+  "SETTINGS_OPTION4": "Option 4",
+
+  "SETTINGS_PROFILE_BUTTON": "Edit Profile",
+
+  "SETTINGS_PAGE_PROFILE": "Edit Profile",
+
+  "WELCOME_TITLE": "Welcome",
+
+  "LOGIN_TITLE": "Sign in",
+  "LOGIN_ERROR": "Unable to sign in. Please check your account information and try again.",
+  "LOGIN_BUTTON": "Sign in",
+  "SIGNUP_TITLE": "Sign up",
+  "SIGNUP_ERROR": "Unable to create account. Please check your account information and try again.",
+  "SIGNUP_BUTTON": "Sign up",
+
+  "LIST_MASTER_TITLE": "Items",
+
+  "ITEM_CREATE_TITLE": "New Item",
+  "ITEM_CREATE_CHOOSE_IMAGE": "Add Image",
+
+  "ITEM_NAME_PLACEHOLDER": "Name",
+  "ITEM_ABOUT_PLACEHOLDER": "About",
+
+  "DONE_BUTTON": "Done",
+  "CANCEL_BUTTON": "Cancel",
+  "DELETE_BUTTON": "Delete",
+
+  "CARDS_TITLE": "Social",
+
+  "SEARCH_TITLE": "Search",
+  "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\""
+}

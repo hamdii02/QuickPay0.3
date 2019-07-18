@@ -1,0 +1,4 @@
+#Tue Jul 16 22:03:49 WAT 2019
+base.0=C\:\\Users\\ASUS\\ionic_project\\QuickPay0.3\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
