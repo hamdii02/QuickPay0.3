@@ -1,0 +1,51 @@
+page-panier{
+    .container-logo {
+            display: inline-block;
+            width: 100%;
+            margin: 5px 0;
+          
+            img {
+              max-width: 100px;
+            }
+    }
+          .main-content {
+            //@include flexbox();
+            @include flex-wrap(wrap);
+            min-height: 100%;
+    }
+    .splash-logo {
+        margin: auto;
+        background-size: 100%;
+        width: 128px;
+        height: 128px;
+      }
+    }
+    
+    #icon {
+        margin-right:62%;
+        margin-left: 38%;
+        font-size: 75px;
+    }
+    
+    #btn1{
+        margin-bottom: 50px;
+        background-color: rgb(75, 127, 156);
+    }
+    #btn_ann{
+        margin-left: 30px;
+        color: $white;
+        margin-right: 20px;
+    }
+    #btn_conf{
+        background-color: $black;
+        margin:5px;
+        &.activated {
+          background-color: rgb(220, 220, 220);
+          color: $black;
+        }
+      }
+    #prix{
+        border-style: solid;
+        border-width: 1px;
+    }
+    

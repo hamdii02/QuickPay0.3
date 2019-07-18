@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>{{ 'Choice' | translate }}</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class="bg-img">
+      <div class="main-content"> 
+          <div padding text-center class="container-logo">
+              <img src="assets/imgs/logoblack.png">
+          </div>
+          <div padding >
+              <form>
+                  <ion-list>
+                          <ion-item padding-right>
+                            <ion-label> {{ 'INSTITUTION' | translate }} </ion-label>
+                            <!--<ion-select  [(ngModel)]="banque.name">-->
+                            <ion-select class="form-select-text" [(ngModel)]='this.share.banque.name' [ngModelOptions]='{standalone:true}' >
+                              <ion-option value="BIAT" >BIAT</ion-option>
+                              <ion-option value="GEANT">Habitat</ion-option>
+                              <ion-option value="UIB">UIB</ion-option>
+                              <ion-option value="STB">STB</ion-option>
+                            </ion-select>
+                            </ion-item>
+                          <ion-item padding-right>
+                            <ion-label >{{ 'CARD' | translate }} </ion-label>
+                            <!--<ion-select  [(ngModel)]="carte.name">-->
+                            <ion-select [(ngModel)]="carte.name" [ngModelOptions]='{standalone:true}' >
+                              <ion-option value="Visa">Visa</ion-option>
+                              <ion-option value="MasterCard">MasterCard</ion-option>
+                            </ion-select>
+                            </ion-item>
+                          
+                  </ion-list>
+  
+                  <button ion-button clear (click)="onGoToPanier()" >
+                    <div padding class="form-bottom-text"> 
+                      <label>{{ 'Cancel' | translate }}</label>
+                    </div>
+                  </button>
+                  <button ion-button class="btn_conf" (click)="onGoToPayment()">{{ 'Confirm' | translate }}</button>
+                  <!--
+                  <button type="submit" ion-button full color="dark" [disabled]="!authForm.valid">Sign In</button>
+                  -->
+
+              </form>  
+          </div>
+        </div>
+  </ion-content>

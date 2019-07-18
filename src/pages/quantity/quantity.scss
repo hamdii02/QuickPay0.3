@@ -1,0 +1,54 @@
+page-content {
+    .container-logo {
+      display: inline-block;
+      width: 100%;
+      margin: 5px 0;
+    
+      img {
+        max-width: 100px;
+      }
+    }
+    .splash-logo {
+      margin: auto;
+      background: url('../assets/img/logowhite.png') repeat transparent;
+      background-size: 100%;
+      width: 128px;
+      height: 128px;
+    }
+    .main-content {
+  //@include flexbox();
+      @include flex-wrap(wrap);
+      min-height: 100%;
+    }
+    .container-bottom {
+      @include inline-flex;
+      @include flex-wrap(wrap);
+      @include align-self(flex-end);
+    }
+    .list {
+      padding:0 !important;
+    }
+    form {
+      .button-md,
+      .button-ios {
+        margin: 0px !important;
+        padding: 26px !important;
+      }
+      .btn_conf{
+        background-color: $black;
+        margin:50px;
+        &.activated {
+          background-color: rgb(220, 220, 220);
+        }
+      }
+    }
+    .form-bottom-text label{
+      color: $white;
+    }
+    button.login {
+      &.activated {
+        background-color: rgb(220, 220, 220);
+      }
+    }
+  }
+  

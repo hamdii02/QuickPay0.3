@@ -1,0 +1,30 @@
+<!--<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>-->
+
+<ion-content class="bg-img"> 
+  <div class="main-content"> 
+      
+      <div padding text-center class="container-logo">
+          <img src="assets/imgs/logoblack.png">
+      </div>
+      
+      <div padding >
+          <form>
+              <ion-list>
+                      <ion-item padding-right>
+                        <ion-label >{{ 'Supermarket' | translate }} </ion-label>
+                        <ion-select class="form-select-text" [(ngModel)]="this.share.market.name" [ngModelOptions]="{standalone:true}" >
+                          <ion-option value="Carrefour" >Carrefour</ion-option>
+                          <ion-option value="Monoprix">Monoprix</ion-option>
+                          <ion-option value="Geant">Géant</ion-option>
+                        </ion-select>
+                      </ion-item>
+              </ion-list>
+              <button ion-button class="form btn_conf" block (click)="onGoToPanier()">{{ 'Confirm' | translate }}</button>
+          </form>  
+      </div>
+    </div>
+</ion-content>

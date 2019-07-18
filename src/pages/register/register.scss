@@ -1,0 +1,59 @@
+page-register {
+    .container-logo {
+      display: inline-block;
+      width: 100%;
+      margin: 5px 0;
+    
+      img {
+        max-width: 100px;
+      }
+    }
+    .main-content {
+      @include flexbox();
+      @include flex-wrap(wrap);
+      min-height: 100%;
+    }
+    .container-bottom {
+      @include inline-flex;
+      @include flex-wrap(wrap);
+      @include align-self(flex-end);
+    }
+    .list {
+      padding:0 !important;
+    }
+    form {
+      .button-md,
+      .button-ios {
+        margin: 0px !important;
+        background-color: $black;
+        padding: 26px !important;
+      }
+    }
+    .form-bottom-text {
+      display: inline-block;
+      width: 100%;
+    }
+    .form-bottom-text label,
+    a {
+      color: $white;
+      font-size: 15px;
+    }
+    button.login{
+      &.activated{
+        background-color: rgb(220,220,220);
+        color: $black;
+      }
+    }
+    .errormsg p {
+      background-color: rgba(255,0,0,.3);
+      color: $white;
+      border: 1px solid #FF0000;
+      padding: 5px;
+    }
+    .eye-icon-btn{
+      background-color: transparent !important;
+      color: $black;
+      font-size: 2.2rem !important;
+      }
+  }
+  

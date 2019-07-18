@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ 'RECEIPT' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-img"> 
+<div class="main-content"> 
+    <div padding text-center class="container-logo">
+        <img src="assets/imgs/logoblack.png">
+    </div>
+
+  <div padding >
+      <form>
+          <ion-card id="recu">
+              
+                  <h2 padding>{{ 'THX' | translate }}</h2>
+                <h2 padding>{{ 'SUCCESS' | translate }}</h2>
+                <!--<p padding-left>item date </p>-->
+
+                <p padding-left>{{"Supermarket" | translate}} : {{this.share.market.name}}</p> 
+                <p padding-left>{{ 'TOTAL' | translate }}: {{this.share.market.name}}</p> 
+              <ion-card-content>
+                <h4 padding>
+                    {{ 'FIND_QR' | translate }}
+                </h4>
+              </ion-card-content>
+          </ion-card> 
+          <ion-card id="recu" *ngIf="qrData">
+            <p>QR code</p>
+            
+            <ngx-qrcode [qrc-value]="qrData"></ngx-qrcode>
+            
+          </ion-card>
+      </form>      
+  </div>
+</div>
+<!--<button ion-fab center bottom> <ion-icon name="close"  ></ion-icon></button>-->
+<form>
+  <button ion-button full color="dark" (click)="cancel()"> {{ 'BACK_HOME' | translate }}</button>
+</form>
+
+</ion-content>
+
+<ion-footer>
+<!--<button ion-fab id="bttn" bottom color=danger (click)="cancel()" > <ion-icon name="close"  ></ion-icon>
+</button>-->
+
+
+</ion-footer>

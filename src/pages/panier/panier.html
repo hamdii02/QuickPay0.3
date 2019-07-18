@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'CART' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content class="bg-img"> 
+    <div class="main-content"> 
+        <div padding text-center class="container-logo">
+            <img src="assets/imgs/logoblack.png">
+        </div>
+    <div padding >
+    <ion-list>
+        <ion-item-sliding *ngFor="let item of this.share.items" >
+            <ion-item >
+                <h1>{{ item.nom }}  <span> x {{ item.myQuantity}}</span></h1>
+               <h3> description : {{ item.description }} </h3>
+                <h3>prix : {{ item.prix }}</h3>
+                
+                
+              </ion-item>
+          <ion-item-options side="left">
+            <button ion-button color=#5AAD45  (click)="modifier(item)">{{ 'Modify' | translate }}</button>
+            <button ion-button color="danger" (click)="delete(item)">{{ 'Delete' | translate }}</button>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
+  
+  
+    <ion-list>
+     
+    </ion-list>
+
+  </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <p id="prix">
+      {{ 'TOTAL' | translate }}:
+    {{ this.share.prix}} DT
+  </p>
+  <button ion-button clear id="btn_ann" (click)="onGoToHome()" >{{ 'Cancel' | translate }}</button>
+  <button ion-button id="btn_conf" (click)="onGoToChoice()" >{{ 'Confirm' | translate }}</button>
+  <ion-fab  bottom right edge>
+    <button id="btn1" ion-fab mini (click)="scanCode()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-footer>

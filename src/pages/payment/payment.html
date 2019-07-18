@@ -1,0 +1,57 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'PAYMENT' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="bg-img"> 
+    <div class="main-content"> 
+        <div padding text-center class="container-logo">
+            <img src="assets/imgs/logoblack.png">
+        </div>
+        <div padding class="container-bottom">
+          <form>
+              <!--<div class="errormsg">
+                  <div *ngIf="card.errors && card.touched">
+                      <p>Card number is required.</p>
+                  </div>
+                  <div *ngIf="password.errors && password.touched">
+                      <p>Password is required.</p>
+                  </div>
+              </div>-->
+              <ion-list>
+                <ion-item padding-right>
+                  <ion-label >
+                    <ion-icon ios="ios-card" md="md-card"  ></ion-icon>
+                    <!--{{ 'Card Number' | translate }}-->
+                    {{ 'NUMBER' | translate }}
+                  </ion-label>
+                  <ion-input type="number" name="Card number" [(ngModel)]='carte_code' [ngModelOptions]='{standalone:true}'></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label >
+                    <ion-icon ios="ios-unlock" md="md-unlock"></ion-icon>
+                    {{ 'PASSWORD' | translate }}</ion-label> 
+                  <ion-input type="password" name="password" [(ngModel)]='code' [ngModelOptions]='{standalone:true}'></ion-input>
+                <!--<button ion-button clear class="eye-icon-btn" type="button" item-right (click)="managePassword()"><ion-icon name="{{passeye}}"></ion-icon></button>-->
+                </ion-item>
+              </ion-list>
+              <button ion-button block class="btn_conf"(click)="check()">{{ 'Confirm' | translate }}</button>
+
+              <button ion-button clear block class="btn_can">
+                  <div padding class="form-bottom-text" (click)="onGoToChoice()"> 
+                    <label> {{ 'Cancel' | translate }}</label>
+                  </div>
+                </button>
+              <!--
+              <button type="submit" ion-button full color="dark" [disabled]="!authForm.valid">Sign In</button>
+              -->
+            </form> 
+        </div>
+    </div>
+</ion-content>
+
+  

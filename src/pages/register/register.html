@@ -1,0 +1,63 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'SIGNUP_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="bg-img">
+    <div class="main-content">
+        <div padding text-center class="container-logo">
+            <img src="assets/imgs/logoblack.png">
+        </div> 
+        <div padding class="container-bottom">
+          <form  >
+            <!--<div class="errormsg">
+                  <div *ngIf="email.errors && email.touched">
+                      <p>Email is required.</p>
+                  </div>
+                  <div *ngIf="password.errors && password.touched">
+                      <p>Password is required.</p>
+                  </div>
+              </div>-->
+              <ion-list>
+                <ion-item padding-right>
+                  <ion-label fixed>
+                      <ion-icon ios="ios-contact" md="md-contact"></ion-icon>
+                      {{ 'NAME' | translate }}
+                  </ion-label>
+                  <ion-input type="text" [(ngModel)]="user.name" name="name"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label fixed>
+                      <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+                      {{ 'EMAIL' | translate }}
+                  </ion-label>
+                  <ion-input type="email" [(ngModel)]="user.email" name="email"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label >
+                    <ion-icon ios="ios-unlock" md="md-unlock"></ion-icon>
+                    {{ 'PASSWORD' | translate }}
+                  </ion-label>
+                  <ion-input type="password" [(ngModel)]="user.password" name="password"></ion-input>
+                  <!--<button ion-button clear class="eye-icon-btn" type="button" item-right (click)="managePassword()"><ion-icon name="{{passeye}}"></ion-icon></button>-->
+                </ion-item>
+              </ion-list>
+              <button ion-button block class="login" (click)="register()"> {{ 'SIGNUP_BUTTON' | translate }}</button>
+              <!--
+              <button type="submit" ion-button full color="dark" [disabled]="!authForm.valid">Sign In</button>
+              -->
+          </form>
+          <div padding text-center class="form-bottom-text">
+              <label>{{ 'ACCOUNT' | translate }} <a href="javascript:void(0);" (click)="login()">{{ 'LOGIN_BUTTON' | translate }}</a></label>
+          </div>
+        </div>
+    </div>
+    
+</ion-content>
+
+

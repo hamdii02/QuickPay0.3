@@ -1,0 +1,56 @@
+page-home {
+  .container-logo {
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0;
+  
+    img {
+      max-width: 100px;
+    }
+}
+  .main-content {
+    //@include flexbox();
+    @include flex-wrap(wrap);
+    min-height: 100%;
+}
+.splash-logo {
+margin: auto;
+background-size: 100%;
+width: 128px;
+height: 128px;
+}
+    .container-bottom {
+      @include inline-flex;
+      @include flex-wrap(wrap);
+      @include align-self(flex-end);
+    }
+    .list {
+      padding:0 !important;
+    }
+    form {
+      .button-md,
+      .button-ios {
+        margin: 0px !important;
+        padding: 26px !important;
+      }
+      .btn_conf{
+        background-color: $black;
+        &.activated {
+          background-color: rgb(220, 220, 220);
+          color: $black;
+        }
+      }
+    }
+    .form-bottom-text label{
+      color: $white;
+    }
+    .btn_conf{
+      margin-top: 80%;
+      background-color: $black;
+    }
+    &.activated {
+      background-color: rgb(220, 220, 220);
+      color: $black;
+    }
+  }
+  

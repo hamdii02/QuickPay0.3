@@ -1,0 +1,99 @@
+<!--
+  Generated template for the QuantityPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>quantity</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <ion-icon id="icon"  name="cart"  ></ion-icon>
+    <ion-item>
+      <ion-input type="number" placeholder="quantité" [(ngModel)]="this.share.myQuantity" min=1 ></ion-input>
+    </ion-item>
+    
+  </ion-content>
+  <ion-footer>
+     <button ion-button id="icon_check" (click)="onGoToHome()"><ion-icon  name="checkmark-circle" color="#4cd137"></ion-icon></button>
+     <button ion-button id="icon_back" (click)="onGoToHome()"><ion-icon  name="backspace" color="#4cd137"></ion-icon></button>
+  
+  </ion-footer>
+  
+  <ion-header>
+    <ion-navbar>
+      <ion-title>
+        Quantity
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class="bg-img">
+      <div class="main-content"> 
+          <div padding text-center class="container-logo">
+              <img src="assets/imgs/logoblack.png">
+          </div>
+          <div padding class="container-bottom">
+              <form>
+                  <ion-list>
+                    <ion-item padding-right>
+                        <ion-label>QUANTITY</ion-label>
+                        <ion-input type="number" placeholder="Quantity" [(ngModel)]="this.share.myQuantity" min=1 ></ion-input>
+                    </ion-item>
+                  </ion-list>
+  
+                  <button ion-button clear class="btn_can" (click)="cancel()">
+                    <div padding class="form-bottom-text"> 
+                      <label>Cancel</label>
+                    </div>
+                  </button>
+                  <button ion-button class="btn_conf" (click)="onGoToHome()">Confirm</button>
+                  
+                  
+              </form>  
+          </div>
+        </div>
+  </ion-content>
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+        {{ 'QUANTITY' | translate }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-img">
+    <div class="main-content"> 
+        <div class="splash-logo">
+            <div padding text-center class="container-logo">
+                <img src="assets/imgs/logo.png">
+            </div>
+        </div>
+        <div padding class="container-bottom">
+            <form>
+                <ion-list>
+                  <ion-item padding-right>
+                      <ion-label>{{ 'QUANTITY' | translate }}</ion-label>
+                      <ion-input type="number" placeholder="Quantity" [(ngModel)]="this.share.myQuantity" [ngModelOptions]="{standalone:true}" min=1 ></ion-input>
+                  </ion-item>
+                </ion-list>
+
+                <button ion-button clear class="btn_can" (click)="cancel()">
+                  <div padding class="form-bottom-text"> 
+                    <label>{{ 'Cancel' | translate }}</label>
+                  </div>
+                </button>
+                <button ion-button class="btn_conf" (click)="onGoToHome()">{{ 'Confirm' | translate }}</button>
+                
+                
+            </form>  
+        </div>
+      </div>
+</ion-content>

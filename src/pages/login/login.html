@@ -1,0 +1,137 @@
+<!-- 
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'LOGIN_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="bg-img"> 
+    <div class="main-content"> 
+        <div padding text-center class="container-logo">
+            <img src="assets/imgs/logoblack.png">
+        </div>
+        <div text-center class="socialLogin" padding>
+            <button ion-button full class="google" (click)="socialLogin('google')"><ion-icon name="logo-google" style="margin-right: 12px;"></ion-icon>Sign in with Google</button>
+            <button ion-button full class="facebook" (click)="socialLogin('facebook')"><ion-icon name="logo-facebook" style="margin-right: 12px;"></ion-icon> Sign in with Facebook</button>
+          </div>
+
+
+          <div class="sepretor-or" padding horizontal> <p>Or</p></div>
+
+        <div padding class="container-bottom">
+          <form >
+              <div class="errormsg">
+                  <div *ngIf="email.errors && email.touched">
+                      <p>Email is required.</p>
+                  </div>
+                  <div *ngIf="password.errors && password.touched">
+                      <p>Password is required.</p>
+                  </div>
+              </div>
+              <ion-list>
+                <ion-item padding-right>
+                  <ion-label >
+                    <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+                    {{ 'EMAIL' | translate }}*
+                  </ion-label>
+                  <ion-input type="email" [(ngModel)]="user.email" name="email" required ></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label >
+                    <ion-icon ios="ios-unlock" md="md-unlock"></ion-icon>
+                    {{ 'PASSWORD' | translate }}*</ion-label> 
+                  <ion-input type="password" [(ngModel)]="user.password" name="password" type="{{passwordtype}}" required></ion-input>
+                <button ion-button clear class="eye-icon-btn" type="button" item-right (click)="managePassword()"><ion-icon name="{{passeye}}"></ion-icon></button>
+                </ion-item>
+              </ion-list>
+              <button ion-button block class="login" (click)="login()">{{ 'LOGIN_BUTTON' | translate }}</button>
+              
+         
+            
+            </form>        
+            
+            <div padding text-center class="form-bottom-text" >
+              <a href="javascript:void(0);" (click)="forgetpassword()" >
+                  {{ 'FORGOT_PASSWORD' | translate }}
+              </a>
+            </div>
+
+            <div padding text-center class="form-bottom-text">
+                <label>{{ 'NO_ACCOUNT' | translate }} <a href="javascript:void(0);" (click)="gotoregister()">{{ 'SIGNUP' | translate }}</a></label>
+              </div>
+        </div>
+    </div>
+</ion-content>
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'LOGIN_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="bg-img"> 
+    <div class="main-content"> 
+        <div padding text-center class="container-logo">
+            <img src="assets/imgs/logoblack.png">
+        </div>
+        <div text-center class="socialLogin" padding>
+            <button ion-button full class="google" (click)="socialLogin('google')">
+              <ion-icon name="logo-google" style="margin-right: 12px;"></ion-icon>
+              {{ 'LOGIN_GOOGLE' | translate }}
+            </button>
+            <!--<button ion-button full class="facebook" (click)="socialLogin('facebook')">
+              <ion-icon name="logo-facebook" style="margin-right: 12px;"></ion-icon>
+              {{ 'LOGIN_FB' | translate }}
+            </button>-->
+        </div>
+
+        <div padding class="container-bottom">
+          <form >
+              <div class="errormsg">
+                  <div *ngIf="email.errors && email.touched">
+                      <p>{{ 'EMAIL_REQUIRED' | translate }}</p>
+                  </div>
+                  <div *ngIf="password.errors && password.touched">
+                      <p>{{ 'PWD_REQUIRED' | translate }}</p>
+                  </div>
+              </div>
+              <ion-list>
+                <ion-item padding-right>
+                  <ion-label >
+                    <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+                    {{ 'EMAIL' | translate }}*
+                  </ion-label>
+                  <ion-input type="email" [(ngModel)]="user.email" name="email" required ></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label >
+                    <ion-icon ios="ios-unlock" md="md-unlock"></ion-icon>
+                    {{ 'PASSWORD' | translate }}*</ion-label> 
+                  <ion-input type="password" [(ngModel)]="user.password" name="password" type="{{passwordtype}}" required></ion-input>
+                <button ion-button clear class="eye-icon-btn" type="button" item-right (click)="managePassword()"><ion-icon name="{{passeye}}"></ion-icon></button>
+                </ion-item>
+              </ion-list>
+              <button ion-button block class="login" (click)="login()">{{ 'LOGIN_BUTTON' | translate }}</button>
+              
+             <!-- <button type="submit" ion-button full color="dark" [disabled]="!authForm.valid">Sign In</button>-->
+            
+            </form>        
+            
+            <div padding text-center class="form-bottom-text" >
+              <a href="javascript:void(0);" (click)="forgetpassword()" >
+                  {{ 'FORGOT_PASSWORD' | translate }}
+              </a>
+            </div>
+
+            <div padding text-center class="form-bottom-text">
+                <label>{{ 'NO_ACCOUNT' | translate }} <a href="javascript:void(0);" (click)="gotoregister()">{{ 'SIGNUP' | translate }}</a></label>
+              </div>
+        </div>
+    </div>
+</ion-content>
